@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Wifi 定位原理及 iOS Wifi 列表获取
-date: 2017-01-03 
+date: 2017-01-03
 tag: iOS
 ---
 
@@ -25,7 +25,7 @@ tag: iOS
 
 >* 1、向 Apple 申请开发 Network Extension 权限
 >* 2、申请包含 Network Extension 的描述文件
->* 3、配置 Info.plist 
+>* 3、配置 Info.plist
 >* 4、配置 entitlements
 >* 5、iOS 获取 Wifi 列表代码实现
 >* 6、获取Wifi列表回调
@@ -54,7 +54,7 @@ What type of entitlement are you requesting?
 申请后大概两周左右能收到 Aplle的 确认信，如：
 
 ```
-Hi, 
+Hi,
 
 Thanks for your interest in the Network Extension APIs.
 
@@ -69,7 +69,7 @@ We added a new template containing the Network Extension entitlements to your te
 
 选择包含 Network Extension 的描述文件，后点击下载，下载完成双击描述文件。
 
-### 3、配置 Info.plist 
+### 3、配置 Info.plist
 
 Xcode Info.plist 里 Required background modes 添加 一个 network-authentication(item)
 
@@ -109,7 +109,7 @@ kNEHotspotHelperCommandTypeFilterScanList： 表示扫描到 Wifi 列表信息�
 
 NEHotspotNetwork 里有如下信息：
 
->* SSID：Wifi 名称 
+>* SSID：Wifi 名称
 >* BSSID：站点的 MAC 地址
 >* signalStrength： Wifi信号强度，该值在0.0-1.0之间     
 >* secure：网络是否安全 (不需要密码的 Wifi，该值为 false)
@@ -150,8 +150,3 @@ NEHotspotNetwork 里有如下信息：
 <br>
 
 参考资源：[NEHotspotHelper NetworkExtension API iOS9.0](http://stackoverflow.com/questions/31704292/nehotspothelper-networkextension-api-ios9-0)
-
-<br>
-转载请注明：[潘柏信的博客](http://baixin) » [Wifi 定位原理及 iOS Wifi 列表获取](http://baixin.io/2017/01/iOS_Wifilist/)  
-
-
