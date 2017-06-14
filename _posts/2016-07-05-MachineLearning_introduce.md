@@ -33,3 +33,5 @@ tag: 机器学习
 #### SVM:
 　　**名词解释：** 支持向量机（Support Vector Machine）。
 　　在机器学习领域，支持向量机SVM(Support Vector Machine)是一个有监督的学习模型，通常用来进行模式识别、分类、以及回归分析。
+
+### 一篇一首歌
